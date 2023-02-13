@@ -1,0 +1,192 @@
+.gameContainer{
+    background-color: black;
+    width: 1366px;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gameBg{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top, var(--Radial-Gradient) 0%, var(--Radial-Gradient2) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rulesText{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
+.containerRulesText{
+    outline: 0.15rem solid var(--Header-Outline);
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    margin-bottom: 2rem;
+    margin-right: 5rem;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerRulesText>p{
+    color: white;
+}
+.rulesPanelCol{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
+    height: 768px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.rulesPanelRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.rulesPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    height: 55%;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    animation-name: scale-up-ver-center;
+    animation-duration: 500ms;
+}  
+.rulesAndClose{
+    width: calc(100% - 4rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}  
+.selectGame{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.selectGameBtn{
+    width: 15rem;
+    height: 10rem;
+    outline: 0.15rem solid var(--Header-Outline);
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+.selectGameBtn:hover{
+    transition: 500ms;
+    cursor: pointer;
+    box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.455) ;
+}
+.containerRulesTextSelector:hover{
+    transition: 500ms;
+    cursor: pointer;
+    box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.455)  ;
+}
+.selectGameAndRules{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerRulesTextSelector{
+    outline: 0.15rem solid var(--Header-Outline);
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    margin-top: 2rem;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+.containerRulesTextSelector>p{
+    color: white;
+}
+.rulesPanelBonus{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    height: 65%;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    animation-name: scale-up-ver-center;
+    animation-duration: 500ms;
+    
+}
+.rulesPanelBonus:disabled{
+    animation-name: scale-up-ver-center;
+    animation-duration: 500ms;
+}
+.scale-up-ver-center {
+	-webkit-animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ @-webkit-keyframes scale-up-ver-center {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+  @keyframes scale-up-ver-center {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+  

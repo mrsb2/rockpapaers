@@ -95,69 +95,84 @@
     justify-content: center;
     align-items: center;
 }
-.gridGame{
-    background-image: url(../../assets/images/bg-triangle.svg);
+.gridGameBonus{
+    background-image: url(../../assets/images/bg-pentagon.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 70%;
-    height: 70%;
+    width: 65%;
+    height: 85%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     place-items: center;
     position: relative;
 
 }
 
 
-#gameContainer{
+#gameContainerBonus{
+    transition: 500ms;
     background-color: white;
     border-radius: 100%;
-    width: 7rem;
-    height: 7rem;
+    width: 5.5rem;
+    height: 5.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 
 }
-#gameContainer:hover{
-    transition: 500ms;
-    cursor: pointer;
-    outline: 1rem solid rgb(0, 255, 60);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
-    0rem 0.4rem 0rem 1rem rgb(0, 255, 60);
-    
-}
 
-
-.scissors{
-    transition: 500ms;
+.scissorsBonus{
     grid-column: 3 / 4;
     grid-row: 1 / 1;
-    outline: 1rem solid var(--Scissors-Gradient2);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331),
-    0rem 0.4rem 0rem 1rem var(--Scissors-Gradient);
+    outline: 0.7rem solid var(--Scissors-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331),
+    0rem 0.4rem 0rem 0.7rem var(--Scissors-Gradient);
+}
+#gameContainerBonus:hover{
+    transition: 500ms;
+    cursor: pointer;
+    outline: 0.7rem solid rgb(0, 255, 60);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331),
+    0rem 0.4rem 0rem 0.7rem rgb(0, 255, 60);
+    
+    
 }
 
-.paper{
+.paperBonus{
+    grid-column: 5 / 5;
+    grid-row: 2 / 3;
+    outline: 0.7rem solid var(--Paper-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 0.7rem var(--Paper-Gradient);
     transition: 500ms;
-    grid-column: 1 / 2;
-    grid-row: 1 / 1;
-    outline: 1rem solid var(--Paper-Gradient2);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
-    0rem 0.4rem 0rem 1rem var(--Paper-Gradient);
 }
 
-.rock{
+.rockBonus{
+    grid-column: 4 / 5;
+    grid-row: 4 / 4;
+    outline: 0.7rem solid var(--Rock-Gradient);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 0.7rem var(--Rock-Gradient);
     transition: 500ms;
+}
+.spock{
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    outline: 0.7rem solid var(--Cyan);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 0.7rem var(--Cyan);
+    transition: 500ms;
+}
+.lizard{
     grid-column: 2 / 3;
-    grid-row: 3 / 3;
-    outline: 1rem solid var(--Rock-Gradient);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
-    0rem 0.4rem 0rem 1rem var(--Rock-Gradient);
+    grid-row: 4 / 4;
+    outline: 0.7rem solid var(--Lizard-Gradient);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 0.7rem var(--Lizard-Gradient);
+    transition: 500ms;
 }
 .rulesText{
     width: 100%;
@@ -180,12 +195,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: 500ms;
-}
-.containerRulesText:hover{
-    transition: 500ms;
-    cursor: pointer;
-    box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.455)  ;
 }
 .containerRulesText>p{
     color: white;

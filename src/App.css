@@ -13,3 +13,10 @@ body, html {
     font-family: 'Barlow Semi Condensed';
 
 }
+
+.game{
+  display: flex;
+}
+.gameBonus{
+  display: flex;
+}
