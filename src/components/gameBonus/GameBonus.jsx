@@ -65,7 +65,7 @@ const GameBonus = () => {
                 </div>
             </div>
             <div className='gameElementsCol'>
-                <div className='gameElementsRow'>
+                <div className='gameElementsRowBonus'>
                     <div className='gridGameBonus'>
                         <div id='gameContainerBonus' className='scissorsBonus'>
                             <img src={Scissors} className='scissorsImg' alt='scissors'></img>

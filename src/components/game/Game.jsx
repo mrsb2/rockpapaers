@@ -1,15 +1,16 @@
 import React from 'react';
 import './game.css';
 import Logo from '../../assets/images/logo.svg';
-import Scissors from '../../assets/images/icon-scissors.svg';
-import Paper from '../../assets/images/icon-paper.svg';
-import Rock from '../../assets/images/icon-rock.svg';
+import ScissorsImg from '../../assets/images/icon-scissors.svg';
+import PaperImg from '../../assets/images/icon-paper.svg';
+import RockImg from '../../assets/images/icon-rock.svg';
 import RulesDefault from '../../assets/images/image-rules.svg';
 import Close from '../../assets/images/icon-close.svg';
 
 
 const Game = () => {
 
+    //#region Panel/Animation/Buttons
     const ClosePanel = [
         {transform: 'scale(1)'},
         {opacity: '1'},
@@ -42,9 +43,40 @@ const Game = () => {
         document.getElementById('gameNormal').style.display='none';
         document.getElementById('gameSelector').style.display='flex';
     }
+    //#endregion
+  
+  
+  
+    const Scissors = () => {
+        document.getElementById('gameElementRow').style.display='none';
+        document.getElementById('fightDivId').style.display='flex';
+    }
 
-    
-  return (
+    const Paper = () => {
+        document.getElementById('gameElementRow').style.display='none';
+        document.getElementById('fightDivId').style.display='flex';
+    }
+    const Rock = () => {
+        document.getElementById('gameElementRow').style.display='none';
+        document.getElementById('fightDivId').style.display='flex';
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    return (
     <div className='gameContainer'>
         <div className='gameBg'>
             <div className='scoreTableContainer'>
@@ -66,21 +98,37 @@ const Game = () => {
 
 
 
-            
+
             <div className='gameElementsCol'>
-                <div className='gameElementsRow'>
+                <div id='gameElementRow' className='gameElementsRow'>
                     <div className='gridGame'>
-                        <div id='gameContainer' className='scissors'>
-                            <img src={Scissors} className='scissorsImg' alt='scissors'></img>
+                        <div id='gameContainer' className='scissors' onClick={Scissors}>
+                            <img src={ScissorsImg} className='scissorsImg' alt='scissors'></img>
 
                         </div>
-                        <div id='gameContainer' className='paper'>
-                            <img src={Paper} className='paperImg' alt='paper'></img>
+                        <div id='gameContainer' className='paper' onClick={Paper}>
+                            <img src={PaperImg} className='paperImg' alt='paper'></img>
                         
                         </div>
                         <div id='gameContainer' className='rock'>
-                            <img src={Rock} className='rockImg' alt='rock'></img>
+                            <img src={RockImg} className='rockImg' alt='rock' onClick={Rock}></img>
                         
+                        </div>
+                    </div>
+                    
+
+                </div>
+            <div id='fightDivId' className='fightDiv'>
+                    <div className='playerDiv'>
+                        <p>YOU PICKED</p>
+                        <div className='coinHolder'>
+
+                        </div>
+                    </div>
+                    <div className='computerDiv'>
+                        <p>THE HOUSE PICKED</p>
+                        <div className='coinHolder'>
+                            
                         </div>
                     </div>
 
@@ -91,7 +139,7 @@ const Game = () => {
 
 
             </div>
-
+ 
 
 
 

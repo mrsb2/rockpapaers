@@ -108,6 +108,50 @@
     position: relative;
 
 }
+.fightDiv{
+    width: 70%;
+    height: 80%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.playerDiv>p{
+    color: white;
+    font-size: 1.3rem;
+
+}
+.playerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 45rem;
+    margin-right: 5rem;
+}
+.computerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 45rem;
+    margin-left: 5rem;
+}
+.computerDiv>p{
+    color: white;
+    font-size: 1.3rem;
+
+}
+.coinHolder{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    margin-top: 5rem;
+}
 
 
 #gameContainer{
