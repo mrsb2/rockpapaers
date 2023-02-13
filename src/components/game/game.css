@@ -1,0 +1,225 @@
+.gameContainer{
+    background-color: black;
+    width: 1366px;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gameBg{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top, var(--Radial-Gradient) 0%, var(--Radial-Gradient2) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.scoreTableContainer{
+    width: 50rem;
+    height: 10rem;
+    outline: 0.15rem solid var(--Header-Outline);
+    margin-top: 4rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+
+}
+.scoreTable{
+    width: calc(100% - 4rem);
+    height:  calc(100% - 4rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    
+}
+.score{
+    width: 15rem;
+    height: 8rem;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.scoreRow>p{
+    margin: 0;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    color: var(--Score-Text);
+}
+.scoreRow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scorePoints{
+    color: var(--Dark-Text);
+    font-size: 70px;
+    margin: 0;
+    font-weight: 700;
+}
+.gameName{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.gameName>h1{
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    margin: 0;
+    line-height: 0.75;
+}
+.logoBonus{
+    display: none;
+}
+.gameElementsCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.gameElementsRow{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.gridGame{
+    background-image: url(../../assets/images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    position: relative;
+
+}
+
+
+#gameContainer{
+    background-color: white;
+    border-radius: 100%;
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scissors{
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+    outline: 1rem solid var(--Scissors-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331),
+    0rem 0.4rem 0rem 1rem var(--Scissors-Gradient);
+}
+
+.paper{
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    outline: 1rem solid var(--Paper-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 1rem var(--Paper-Gradient);
+}
+
+.rock{
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+    outline: 1rem solid var(--Rock-Gradient);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 1rem var(--Rock-Gradient);
+}
+.rulesText{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
+.containerRulesText{
+    outline: 0.15rem solid var(--Header-Outline);
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    margin-bottom: 2rem;
+    margin-right: 5rem;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerRulesText>p{
+    color: white;
+}
+.rulesPanelCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
+    height: 768px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.rulesPanelRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.rulesPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    height: 55%;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}  
+.rulesAndClose{
+    width: calc(100% - 4rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}  
