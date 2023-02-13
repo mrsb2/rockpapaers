@@ -6,12 +6,45 @@ import Paper from '../../assets/images/icon-paper.svg';
 import Rock from '../../assets/images/icon-rock.svg';
 import Spock from '../../assets/images/icon-spock.svg';
 import Lizard from '../../assets/images/icon-lizard.svg';
-import RulesDefault from '../../assets/images/image-rules.svg';
 import Close from '../../assets/images/icon-close.svg';
+import RulesBonus from '../../assets/images/image-rules-bonus.svg';
+
 
 
 const GameBonus = () => {
 
+    const ClosePanel = [
+        {transform: 'scale(1)'},
+        {opacity: '1'},
+        {transform: 'scale(0)'},
+        {display: 'none'}
+    
+    ];
+    const newspaperTiming = {
+        duration: 400,
+        iterations: 1,
+        
+    }
+    const RulesPanelBonus = () =>
+    {
+        document.getElementById('rulesPanelBonusInGame').style.display='flex';
+        console.log('openRules');
+    }
+    const CloseRulesBonusAnimation = () =>
+    {
+        document.getElementById('rulesPanelBonusInsideInGame').animate(ClosePanel,newspaperTiming);
+        setTimeout(CloseRules,200);
+        console.log('closeRules');
+    }
+    const CloseRules = () =>
+    {
+        document.getElementById('rulesPanelBonusInGame').style.display='none';
+    }
+    const Menu = () =>
+    {
+        document.getElementById('gameBonus').style.display='none';
+        document.getElementById('gameSelector').style.display='flex';
+    }
 
     
   return (
@@ -63,21 +96,30 @@ const GameBonus = () => {
 
 
             </div>
-            <div className='rulesPanelCol'>
-            <div className='rulesPanelRow'>
-                <div className='rulesPanel'>
-                    <div className='rulesAndClose'>
-                    <h1>RULES</h1>
-                    <img src={Close} alt='Close'></img>
+
+            <div id='rulesPanelBonusInGame' className='rulesPanelCol'>
+                <div className='rulesPanelRow'>
+                    <div id='rulesPanelBonusInsideInGame' className='rulesPanelBonus'>
+                        <div className='rulesAndClose'>
+                            <h1>RULES</h1>
+                            <div id='close' className='close' onClick={CloseRulesBonusAnimation}>
+                            <img src={Close} alt='Close'></img>
+                            </div>
+                        </div>
+                        <img src={RulesBonus} alt='Rules'></img>
                     </div>
-                    <img src={RulesDefault} alt='Rules'></img>
                 </div>
             </div>
-
-        </div>
-            <div className='rulesText'>
-                <div className='containerRulesText'>
-                    <p>RULES</p>
+            <div className='inGameBtn'>
+                <div className='menu'>
+                    <div className='containerMenuText' onClick={Menu}>
+                        <p>MENU</p>
+                </div>
+                </div>
+                <div className='rulesText'>
+                    <div className='containerRulesText' onClick={RulesPanelBonus}>
+                        <p>RULES</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -52,13 +52,14 @@ const GameSelector = () => {
     {
         document.getElementById('gameSelector').style.display='none';
         document.getElementById('gameBonus').style.display='none';
+        document.getElementById('gameNormal').style.display='flex';
 
     }
     const BonusGame = () =>
     {
         document.getElementById('gameSelector').style.display='none';
         document.getElementById('gameNormal').style.display='none';
-
+        document.getElementById('gameBonus').style.display='flex';
     }
     const RulesPanelBonus = () =>
     {

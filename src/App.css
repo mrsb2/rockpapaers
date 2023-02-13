@@ -15,8 +15,8 @@ body, html {
 }
 
 .game{
-  display: flex;
+  display: none;
 }
 .gameBonus{
-  display: flex;
+  display: none;
 }
