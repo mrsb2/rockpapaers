@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './game.css';
 import Logo from '../../assets/images/logo.svg';
 import ScissorsImg from '../../assets/images/icon-scissors.svg';
