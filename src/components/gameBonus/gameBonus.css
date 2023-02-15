@@ -1,3 +1,7 @@
+
+
+
+
 .gameContainer{
     background-color: black;
     width: 1366px;
@@ -6,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    --outlineSize:0.7rem;
     
 }
 .gameBg{
@@ -77,6 +82,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    margin-right: 3rem;
 }
 
 .gameElementsCol{
@@ -127,16 +133,16 @@
 .scissorsBonus{
     grid-column: 3 / 4;
     grid-row: 1 / 1;
-    outline: 0.7rem solid var(--Scissors-Gradient2);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331),
-    0rem 0.4rem 0rem 0.7rem var(--Scissors-Gradient);
+    outline: var(--outlineSize) solid var(--Scissors-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem var(--outlineSize) rgba(0, 0, 0, 0.331),
+    0rem 0.4rem 0rem var(--outlineSize) var(--Scissors-Gradient);
 }
 #gameContainerBonus:hover{
     transition: 500ms;
     cursor: pointer;
-    outline: 0.7rem solid rgb(0, 255, 60);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331),
-    0rem 0.4rem 0rem 0.7rem rgb(0, 255, 60);
+    outline: var(--outlineSize) solid rgb(0, 255, 60);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem var(--outlineSize) rgba(0, 0, 0, 0.331),
+    0rem 0.4rem 0rem var(--outlineSize) rgb(0, 255, 60);
     
     
 }
@@ -144,34 +150,34 @@
 .paperBonus{
     grid-column: 5 / 5;
     grid-row: 2 / 3;
-    outline: 0.7rem solid var(--Paper-Gradient2);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331), 
-    0rem 0.4rem 0rem 0.7rem var(--Paper-Gradient);
+    outline: var(--outlineSize) solid var(--Paper-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem var(--outlineSize) rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem var(--outlineSize) var(--Paper-Gradient);
     transition: 500ms;
 }
 
 .rockBonus{
     grid-column: 4 / 5;
     grid-row: 4 / 4;
-    outline: 0.7rem solid var(--Rock-Gradient);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331), 
-    0rem 0.4rem 0rem 0.7rem var(--Rock-Gradient);
+    outline: var(--outlineSize) solid var(--Rock-Gradient);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem var(--outlineSize) rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem var(--outlineSize) var(--Rock-Gradient);
     transition: 500ms;
 }
 .spock{
     grid-column: 1 / 1;
     grid-row: 2 / 3;
-    outline: 0.7rem solid var(--Cyan);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331), 
-    0rem 0.4rem 0rem 0.7rem var(--Cyan);
+    outline: var(--outlineSize) solid var(--Cyan);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem var(--outlineSize) rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem var(--outlineSize) var(--Cyan);
     transition: 500ms;
 }
 .lizard{
     grid-column: 2 / 3;
     grid-row: 4 / 4;
-    outline: 0.7rem solid var(--Lizard-Gradient);
-    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 0.7rem rgba(0, 0, 0, 0.331), 
-    0rem 0.4rem 0rem 0.7rem var(--Lizard-Gradient);
+    outline: var(--outlineSize) solid var(--Lizard-Gradient);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem var(--outlineSize) rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem var(--outlineSize) var(--Lizard-Gradient);
     transition: 500ms;
 }
 .rulesText{
@@ -279,4 +285,135 @@
     transition: 500ms;
     cursor: pointer;
     box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.455)  ;
+}
+@media screen and (max-width:1200px){
+    .rulesText{
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .menu{
+        justify-content: end;
+        align-items: end;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .scoreTableContainer{
+     width: 30rem;   
+    }
+    .gameName{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:500px) {
+
+    .gridGame{
+        background-size: 60%;
+        width: 20rem;
+        height: 17rem;
+    }
+    .gridGameBonus{
+        background-size: 65%;
+        width: 20rem;
+        height: 17rem;
+    }
+    #gameContainerBonus{
+        width: 4rem;
+        height: 4rem;
+       
+    }
+    #gameContainerBonus>img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    #gameContainer{
+        width: 6rem;
+        height: 6rem;
+     
+    }
+    .scoreTableContainer{
+        width: 20rem;
+        height: 8rem;
+    }
+    .gameName>img{
+        width: 100%;
+        
+    }
+    .gameName{
+        width: 60%;
+        height: 100%;
+        
+    }
+    .score{
+        width: 12rem;
+        height: 6rem;
+    }
+    .scoreRow>p{
+        font-size: 1rem;
+    }
+    .scorePoints{
+        font-size: 50px;
+    }
+    .rulesText{
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .menu{
+        justify-content: end;
+        align-items: end;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    .resultGame{
+        justify-content: end;
+    }
+    .playerDiv{
+        width: 10rem;
+        margin-right: 0;
+    }
+    .computerDiv{
+        width: 10rem;
+        margin-left: 0;
+    }
+    .gameContainerSelected{
+        width: 6rem;
+        height: 6rem;
+    }
+    .effectWinDiv{
+        width: 6rem;
+        height: 6rem;
+    }
+    .effectWinDiv::before{
+        width: 8rem;
+        height: 8rem;
+    }
+    .effectWinDiv::after{
+        width: 9rem;
+        height: 9rem;
+    }
+    .coinHolder{
+        width: 6rem;
+        height: 6rem;
+    }
+    .gameContainer{
+        width: 100vw;
+        height: 100vh;
+        --outlineSize:0.4rem;
+    }
+    .center{
+        width: 100vw;
+    }
+    .gameElementsCol{
+        width: 100%;
+    }
+
+
+
 }

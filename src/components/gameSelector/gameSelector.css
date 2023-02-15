@@ -91,7 +91,7 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .selectGameBtn{
@@ -123,6 +123,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10vw;
 }
 .containerRulesTextSelector{
     outline: 0.15rem solid var(--Header-Outline);
@@ -189,4 +190,18 @@
               transform: scaleY(1);
     }
   }
-  
+
+
+@media screen and (max-width:600px) {
+    .selectGame{
+        flex-direction: column;
+    }
+    .gameContainer{
+        width: 100vw;
+        height: 100vh;
+    }
+    .center{
+        width: 100vw;
+    }
+
+}

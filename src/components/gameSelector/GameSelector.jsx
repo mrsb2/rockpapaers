@@ -53,6 +53,7 @@ const GameSelector = () => {
         document.getElementById('gameSelector').style.display='none';
         document.getElementById('gameBonus').style.display='none';
         document.getElementById('gameNormal').style.display='flex';
+        document.getElementById('scoreCount').innerText=0;
 
     }
     const BonusGame = () =>

@@ -5,7 +5,10 @@
   justify-content: center;
   align-items: center;
 }
-
+body{
+  margin:0;
+  padding: 0;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap');
 

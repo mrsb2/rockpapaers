@@ -109,13 +109,20 @@
 
 }
 .fightDiv{
-    width: 70%;
+    width: 100%;
     height: 80%;
     display: none;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     
+}
+.fightDivRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .playerDiv>p{
     color: white;
@@ -151,6 +158,10 @@
     height: 10rem;
     border-radius: 100%;
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -174,6 +185,149 @@
     box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
     0rem 0.4rem 0rem 1rem rgb(0, 255, 60);
     
+}
+
+.gameContainerSelected{
+    background-color: white;
+    border-radius: 100%;
+    width: 9rem;
+    height: 9rem;
+    position: absolute;
+
+    
+
+}
+.effectWinDiv{
+    background-color: white;
+    border-radius: 100%;
+    width: 9rem;
+    height: 9rem;
+    position: relative;
+}
+.effectWinDiv::before{
+    background-color: white;
+    border-radius: 100%;
+    width: 11rem;
+    height: 11rem;
+    position: relative;
+}
+.effectWinDiv::after{
+    background-color: white;
+    border-radius: 100%;
+    width: 13rem;
+    height: 13rem;
+    position: relative;
+}
+.resultGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.resultGame>p{
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+    color: white;
+}
+.playAgainBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 2.5rem;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.playAgainBtn>p{
+    color: var(--Dark-Text);
+}
+.playAgainBtn:hover{
+    cursor: pointer;
+}
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(3.2);
+    opacity: 0.1;
+  }
+}
+#scissorsSelected{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    outline: 1rem solid var(--Scissors-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331),
+    0rem 0.4rem 0rem 1rem var(--Scissors-Gradient);
+}
+
+#paperSelected{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    display: none;
+    outline: 1rem solid var(--Paper-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 1rem var(--Paper-Gradient);
+}
+
+#rockSelected{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    display: none;
+    outline: 1rem solid var(--Rock-Gradient);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 1rem var(--Rock-Gradient);
+}
+#scissorsSelectedPc{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    outline: 1rem solid var(--Scissors-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331),
+    0rem 0.4rem 0rem 1rem var(--Scissors-Gradient);
+}
+
+#paperSelectedPc{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    display: none;
+    outline: 1rem solid var(--Paper-Gradient2);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 1rem var(--Paper-Gradient);
+}
+
+#rockSelectedPc{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    display: none;
+    outline: 1rem solid var(--Rock-Gradient);
+    box-shadow: inset 0 0.4rem 0 0 rgba(0, 0, 0, 0.356),0rem 0.4rem 0rem 1rem rgba(0, 0, 0, 0.331), 
+    0rem 0.4rem 0rem 1rem var(--Rock-Gradient);
 }
 
 
@@ -276,3 +430,102 @@
     margin-left: 2rem;
     margin-right: 2rem;
 }  
+
+@media screen and (max-width:1200px){
+    .rulesText{
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .menu{
+        justify-content: end;
+        align-items: end;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .gridGame{
+        background-size: 60%;
+        width: 20rem;
+        height: 17rem;
+    }
+    #gameContainer{
+        width: 6rem;
+        height: 6rem;
+    }
+    .scoreTableContainer{
+        width: 20rem;
+        height: 8rem;
+    }
+    .gameName>img{
+        width: 70%;
+        
+    }
+    .score{
+        width: 12rem;
+        height: 6rem;
+    }
+    .scoreRow>p{
+        font-size: 1rem;
+    }
+    .scorePoints{
+        font-size: 50px;
+    }
+    .rulesText{
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .menu{
+        justify-content: end;
+        align-items: end;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    .resultGame{
+        justify-content: end;
+    }
+    .playerDiv{
+        width: 10rem;
+        margin-right: 0;
+    }
+    .computerDiv{
+        width: 10rem;
+        margin-left: 0;
+    }
+    .gameContainerSelected{
+        width: 6rem;
+        height: 6rem;
+    }
+    .effectWinDiv{
+        width: 6rem;
+        height: 6rem;
+    }
+    .effectWinDiv::before{
+        width: 8rem;
+        height: 8rem;
+    }
+    .effectWinDiv::after{
+        width: 9rem;
+        height: 9rem;
+    }
+    .coinHolder{
+        width: 6rem;
+        height: 6rem;
+    }
+    .gameContainer{
+        width: 100vw;
+        height: 100vh;
+    }
+    .center{
+        width: 100vw;
+    }
+    .gameElementsCol{
+        width: 100%;
+    }
+
+}
