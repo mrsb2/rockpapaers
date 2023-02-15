@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rockpapaers/static/css/main.8ae82607.css",
-    "main.js": "/rockpapaers/static/js/main.f3ce9452.js",
+    "main.css": "/rockpapaers/static/css/main.81fe8cdd.css",
+    "main.js": "/rockpapaers/static/js/main.ad42888b.js",
     "static/js/787.b7b48225.chunk.js": "/rockpapaers/static/js/787.b7b48225.chunk.js",
     "static/media/logo-bonus.svg": "/rockpapaers/static/media/logo-bonus.9bf8aeb80c2526dee7c67aa5c1b74ccc.svg",
     "static/media/image-rules-bonus.svg": "/rockpapaers/static/media/image-rules-bonus.513320fbf32ba9e4a81fba903a77b85f.svg",
@@ -16,12 +16,12 @@
     "static/media/icon-close.svg": "/rockpapaers/static/media/icon-close.bde602ecd1a4e55e0c27137ed651e027.svg",
     "static/media/bg-pentagon.svg": "/rockpapaers/static/media/bg-pentagon.1ad6d36532b75eb7d82c.svg",
     "static/media/bg-triangle.svg": "/rockpapaers/static/media/bg-triangle.77c6ca418d3751d8f717.svg",
-    "main.8ae82607.css.map": "/rockpapaers/static/css/main.8ae82607.css.map",
-    "main.f3ce9452.js.map": "/rockpapaers/static/js/main.f3ce9452.js.map",
+    "main.81fe8cdd.css.map": "/rockpapaers/static/css/main.81fe8cdd.css.map",
+    "main.ad42888b.js.map": "/rockpapaers/static/js/main.ad42888b.js.map",
     "787.b7b48225.chunk.js.map": "/rockpapaers/static/js/787.b7b48225.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ae82607.css",
-    "static/js/main.f3ce9452.js"
+    "static/css/main.81fe8cdd.css",
+    "static/js/main.ad42888b.js"
   ]
 }
