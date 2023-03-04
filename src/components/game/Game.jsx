@@ -147,7 +147,7 @@ const Game = () => {
             console.log(score);
             document.getElementById('scoreCount').innerText= score ;
             console.log('you win');
-            document.getElementById('effectWinPlayer').style.animation= 'ping 0.4s infinite';
+            document.getElementById('effectWinPlayer').style.animation= 'ripple 0.5s linear infinite';
 
         }
         else{
@@ -157,7 +157,7 @@ const Game = () => {
             console.log(score);
             document.getElementById('scoreCount').innerText= score ;
             console.log('computer wins');
-            document.getElementById('effectWinComputer').style.animation= 'ping 0.4s infinite';
+            document.getElementById('effectWinComputer').style.animation= 'ripple 0.5s linear infinite';
         }
 
     }
